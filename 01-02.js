@@ -51,7 +51,7 @@ function init() {
     var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 
     // position the sphere
-    sphere.position.set(0, 4, 2);
+    sphere.position.set(0, 0, 0);
 
     // add the sphere to the scene
     scene.add(sphere);
