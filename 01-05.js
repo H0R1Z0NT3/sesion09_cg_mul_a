@@ -41,13 +41,12 @@ function init() {
     // show axes in the screen
     var axes = new THREE.AxesHelper(20);
     scene.add(axes);
+ 
+    let Cubo = [];
+    for (var i = 0; i < 5; i++) {
+       let nuevoCubo = Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
+    }
 
-    Cubo = [];   // Definir un array unidimensional
-    Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
-    Cubo.push(cubo(4, 4, 4, 0xFF0000, 'Standard', false));
-    Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
-    Cubo.push(cubo(4, 4, 4, 0xFF0000, 'Standard', false));
-    Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
 
     Cubo[0].position.set(-0, 0, 0);
     Cubo[1].position.set(-0, 5, 0);
