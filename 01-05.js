@@ -45,14 +45,8 @@ function init() {
     let Cubo = [];
     for (var i = 0; i < 5; i++) {
        let nuevoCubo = Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
+        Cubo[i].position.set(-0, i*4.2+4, 0);
     }
-
-
-    Cubo[0].position.set(-0, 0, 0);
-    Cubo[1].position.set(-0, 5, 0);
-    Cubo[2].position.set(-0, 10, 0);
-    Cubo[3].position.set(-0, 15, 0);
-    Cubo[4].position.set(-0, 20, 0);
 
     //Luz (requerida para el material MeshLambertMaterial)
     light = new THREE.PointLight(0xFFFF00); //  Luz proveniente de un punto en el espacio, 
