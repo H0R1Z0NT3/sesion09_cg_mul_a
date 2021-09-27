@@ -64,3 +64,7 @@ function init() {
     // render the scene
     renderer.render(scene, camera);
 }
+/* Fuentes:
+    https://developer.mozilla.org/es/docs/Web/CSS/transform
+    https://developer.mozilla.org/es/docs/Web/CSS/transform-function/translate()
+*/
